@@ -33,8 +33,8 @@ public class visualui {
 
 
 
-        String username = "deepanshulambdatest";
-        String access_key = "f8xr8eV7hpJJixO6sbVmPazAH4C8VoAUhEANPjikayLTXNlJKs";
+        String username = "your_lt_username";
+        String access_key = "your_lt_access_key";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("build", "VisualUI");
         capabilities.setCapability("name", "Visual Ui Testing");
@@ -72,24 +72,6 @@ public class visualui {
         Thread.sleep(1000);
 
 
-//        driver.get("https://www.lambdatest.com/webinar/building-selenium");
-//        Thread.sleep(5000);
-//        driver.executeScript("smartui.takeScreenshot,{\"screenshotName\":\"dom-screenshot\",\"ignoreDOM\":{\"id\":[],\"class\":[\"py-30 webinar_custom bg-purple-12 py-50 lg:py-70 xxl:py-100\"]}}");
-//        Thread.sleep(1000);
-//
-//        driver.get("https://www.lambdatest.com/webinar/effective-test-automation-strategy");
-//        Thread.sleep(5000);
-//        driver.executeScript("smartui.takeScreenshot,{\"screenshotName\":\"dom-screenshot\",\"ignoreDOM\":{\"id\":[],\"class\":[\"mt-70 smtablet:mt-30\"]}}");
-////        Thread.sleep(1000);
-////        driver.executeScript("smartui.takeScreenshot,{\"screenshotName\":\"dom-screenshot\",\"ignoreDOM\":{\"id\":[],\"class\":[]}}");
-////        Thread.sleep(1000);
-//        driver.get("https://www.lambdatest.com/");
-//        Thread.sleep(5000);
-
-
-//        driver.findElement(By.xpath("//*[@id=\"header\"]/nav/div/div/div[2]/div/div/div[1]/div[3]/button")).click();
-//        driver.executeScript("smartui.takeScreenshot=pic4");
-//        Thread.sleep(1000);
 
         driver.executeScript("lambda-status=passed");
         driver.quit();
