@@ -9,7 +9,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Hashtable;
 
-public class visualui {
+public class Visualui {
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
         RemoteWebDriver driver = null;
 
