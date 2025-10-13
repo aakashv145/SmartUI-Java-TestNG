@@ -32,8 +32,6 @@ public class SmartUISDKCloud {
         caps.setCapability("browserName", "chrome");
         caps.setCapability("version", "141");
         caps.setCapability("build", "TestNG With Java");
-        caps.setCapability("smartUI.project", "Jenkins Project");
-        caps.setCapability("smartUI.baseline", false);
         caps.setCapability("name", m.getName() + " - " + this.getClass().getName());
         
         if (githubURL != null) {
@@ -50,12 +48,10 @@ public class SmartUISDKCloud {
     public void basicTest() throws Exception {
         System.out.println("Loading Url");
         driver.get("https://www.lambdatest.com/visual-regression-testing");
-        Thread.sleep(1000);
-        SmartUISnapshot.smartuiSnapshot(driver, "visual-regression-testing");
+        Thread.sleep(1000);        
         Thread.sleep(5000);
         driver.get("https://www.lambdatest.com");
         Thread.sleep(1000);
-        SmartUISnapshot.smartuiSnapshot(driver, "homepage");
         Thread.sleep(1000);
         System.out.println("Test Finished");
     }
