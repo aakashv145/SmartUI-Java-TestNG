@@ -22,6 +22,16 @@ public class SmartUISDKCloud {
     private RemoteWebDriver driver;
     private String Status = "failed";
     private String githubURL = System.getenv("GITHUB_URL");
+    static {
+        // Suppress Selenium logs
+        Logger.getLogger("org.openqa.selenium").setLevel(Level.SEVERE);
+
+        // Suppress LambdaTest SmartUI SDK logs
+        Logger.getLogger("com.lambdatest").setLevel(Level.SEVERE);
+
+        // Suppress SLF4J warnings
+        System.setProperty("org.slf4j.simpleLogger.defaultLogLevel", "error");
+    }
 
     @BeforeMethod
     public void setup(Method m, ITestContext ctx) throws MalformedURLException {
