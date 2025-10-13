@@ -32,8 +32,7 @@ public class SmartUISDKCloud {
         caps.setCapability("browserName", "chrome");
         caps.setCapability("version", "141");
         caps.setCapability("build", "TestNG With Java");
-        caps.setCapability("smartUI.project", "YOUR_PROJECT_NAME");
-        caps.setCapability("smartUI.build", "YOUR_BUILD_NAME2");
+        caps.setCapability("smartUI.project", "Jenkins Project");
         caps.setCapability("smartUI.baseline", false);
         caps.setCapability("name", m.getName() + " - " + this.getClass().getName());
         
