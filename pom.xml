@@ -49,7 +49,7 @@
                     <!-- Minimal logging configuration -->
                    <printSummary>false</printSummary>               <!-- show summary -->
 <reportFormat>brief</reportFormat>              <!-- keeps brief output -->
-<redirectTestOutputToFile>false</redirectTestOutputToFile> <!-- allow SOP on console -->
+<redirectTestOutputToFile>true</redirectTestOutputToFile> <!-- allow SOP on console -->
 <systemOut>true</systemOut>                     <!-- ensures System.out prints -->
  <!-- send test output to file -->
                 </configuration>
@@ -101,5 +101,6 @@
         </dependency>
     </dependencies>
 </project>
+
 
 
