@@ -50,7 +50,6 @@
                    <printSummary>false</printSummary>               <!-- show summary -->
 <reportFormat>brief</reportFormat>              <!-- keeps brief output -->
 <redirectTestOutputToFile>true</redirectTestOutputToFile> <!-- allow SOP on console -->
-<systemOut>true</systemOut>                     <!-- ensures System.out prints -->
  <!-- send test output to file -->
                 </configuration>
             </plugin>
@@ -101,6 +100,7 @@
         </dependency>
     </dependencies>
 </project>
+
 
 
 
