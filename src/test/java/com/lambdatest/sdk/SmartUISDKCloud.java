@@ -23,8 +23,8 @@ public class SmartUISDKCloud {
    
     @BeforeMethod
     public void setup(Method m, ITestContext ctx) throws MalformedURLException {
-        String username = "aakashv";
-        String authkey = "QtNkTmYSRgw12vNOP08XpyFcXfMQBgs5a6GZYLQIo3aFGOIP52";
+        String username = "zeeshans";
+        String authkey = "VwbQQouOr96dC0EI7uzHXIiXPzsn167YntkH0kOKdyuHttQlNi";
         String hub = "@hub.lambdatest.com/wd/hub";
 
         DesiredCapabilities caps = new DesiredCapabilities();
@@ -32,7 +32,7 @@ public class SmartUISDKCloud {
         caps.setCapability("browserName", "chrome");
         caps.setCapability("version", "141");
         caps.setCapability("build", "TestNG With Java");
-        caps.setCapability("smartUI.project", "Jenkins Project");
+        caps.setCapability("smartUI.project", "veeva_repeat_logs");
         caps.setCapability("smartUI.baseline", false);        
         caps.setCapability("name", m.getName() + " - " + this.getClass().getName());
         
